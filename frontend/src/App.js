@@ -27,7 +27,7 @@ function AppContent() {
   const [userId, setUserId] = useState(() => `user_${Math.random().toString(36).substr(2, 8)}`);
   const [userName, setUserName] = useState(() => localStorage.getItem('userName') || '');
   const [roomName, setRoomName] = useState('');
-  const [code, setCode] = useState('// Welcome to Real-Time Code Editor!\n// Create a new room or join an existing one to start collaborating.\n\nconsole.log("Hello, World!");');
+  const [code, setCode] = useState('// Welcome to CodeSync!\n// Create a new room or join an existing one to start collaborating.\n\nconsole.log("Hello, World!");');
   const [language, setLanguage] = useState('javascript');
   const [connectedUsers, setConnectedUsers] = useState([]);
   const [cursors, setCursors] = useState({});
