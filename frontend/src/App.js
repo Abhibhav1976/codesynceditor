@@ -616,7 +616,7 @@ function AppContent() {
       case 'css':
         return '/* CSS Code */\nbody {\n    font-family: Arial, sans-serif;\n    background-color: #f0f0f0;\n}\n\nh1 {\n    color: #333;\n    text-align: center;\n}';
       default:
-        return '// Welcome to Real-Time Code Editor!';
+        return '// Welcome to CodeSync!';
     }
   };
 
@@ -641,11 +641,11 @@ function AppContent() {
     setChatMessages([]);
     setMessageReactions({});
     setCursors({});
-    setCode('// Welcome to Real-Time Code Editor!\n// Create a new room or join an existing one to start collaborating.\n\nconsole.log("Hello, World!");');
+    setCode('// Welcome to CodeSync!\n// Create a new room or join an existing one to start collaborating.\n\nconsole.log("Hello, World!");');
     
     // Reset file tabs to default
     setOpenFiles([
-      { id: 'main', name: 'main.js', language: 'javascript', content: '// Welcome to Real-Time Code Editor!\n// Create a new room or join an existing one to start collaborating.\n\nconsole.log("Hello, World!");', isActive: true }
+      { id: 'main', name: 'main.js', language: 'javascript', content: '// Welcome to CodeSync!\n// Create a new room or join an existing one to start collaborating.\n\nconsole.log("Hello, World!");', isActive: true }
     ]);
     setActiveFileId('main');
     
@@ -683,7 +683,7 @@ function AppContent() {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 gap-4">
           <div>
             <h1 className={`text-4xl font-bold ${theme.colors.text.primary} mb-2`}>
-              Real-Time Code Editor
+              CodeSync
             </h1>
             <p className={theme.colors.text.secondary}>
               Collaborate on code in real-time with multiple users
