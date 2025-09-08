@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-"""
-Render deployment startup script for CodeSync backend
-"""
 
 import os
 import uvicorn
